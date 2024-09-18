@@ -37,3 +37,16 @@ export const getCategoryApi=async ()=>{
 export const removeCategoryApi=async (CategoryId)=>{
     return await commonApi("DELETE",`${serverUrl}/category/${CategoryId}`,{})
 }
+
+ //get single videos Api 
+ export const getSingleVideosApi=async (id)=>{
+    return await commonApi("GET",`${serverUrl}/allvideos/${id}`,"")
+}
+//update category Api
+export const updateCategoryApi=async (CategoryId,categoryDetails)=>{
+    return await commonApi("PUT",`${serverUrl}/category/${CategoryId}`,categoryDetails)
+}
+//get single category Api call by view
+export const getSingleCategoryApi=async (id)=>{
+    return await commonApi("GET",`${serverUrl}/category/${id}`,"")
+}

@@ -17,9 +17,9 @@ const Footer = () => {
 
 
       <div className="col-3 "><h5>Links</h5>
-      <a className='fw-bolder 'style={{textDecoration:'none', color:'white'}} href="">Landing Page</a><br />
-      <a className='fw-bolder'style={{textDecoration:'none', color:'white'}} href="">Home Page</a><br />
-      <a className='fw-bolder'style={{textDecoration:'none', color:'white'}} href="">Watch History</a>
+      <a className='fw-bolder 'style={{textDecoration:'none', color:'white'}} href="/">Landing Page</a><br />
+      <a className='fw-bolder'style={{textDecoration:'none', color:'white'}} href="/home">Home Page</a><br />
+      <a className='fw-bolder'style={{textDecoration:'none', color:'white'}} href="/history">Watch History</a>
       </div>
 
 

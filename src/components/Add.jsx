@@ -42,7 +42,7 @@ const handleUpload= async()=>{
       //upload video
       handleClose()//to close the modal
       setVideoDetails({caption:"",url:"",link:""})
-          toast.success(`${result.data.caption}added to your collection`)
+          // toast.success(`${result?.data?.caption}added to your collection`)
           setUploadVideoResponse(result)
     }
     
@@ -94,7 +94,7 @@ const handleUpload= async()=>{
           <Button onClick={handleUpload} variant="primary">Upload</Button>
         </Modal.Footer>
       </Modal> 
-      <ToastContainer position='top-center' theme='colored' autoClose={3000}/>
+      <ToastContainer position='top-center' theme='colored' autoClose={2000}/>
     </>
   )
 }
